@@ -9,6 +9,16 @@ package com.vikram.datastructures.arrays.strings;
  */
 public class CrackingTheCodingInterviewOnePointStringProblem5 {
 	
+	/**
+	 * pale, bale ==> true
+	 * pale, pbale ==> true
+	 * pale, pal => true
+	 * pale, pbbbale ==> false
+	 * 
+	 * @param input1
+	 * @param input2
+	 * @return
+	 */
 	public boolean oneStep(String input1, String input2) {
 		
 		if (input1.length() == input2.length()) {
