@@ -9,6 +9,7 @@ import com.vikram.datastructures.arrays.strings.CrackingTheCodingInterviewString
 import com.vikram.datastructures.arrays.strings.CrackingTheCodingInterviewStringPermutationProblem2;
 import com.vikram.datastructures.arrays.strings.CrackingTheCodingInterviewStringRotationProblem8;
 import com.vikram.datastructures.arrays.strings.CrackingTheCodingInterviewURLifyProblem3;
+import com.vikram.datastructures.arrays.strings.LeetCode151ReverseStringMicrosoft;
 import com.vikram.datastructures.arrays.strings.LeetCode2DiagonalTraverse;
 import com.vikram.datastructures.arrays.strings.LeetCodeAddBinaryString;
 import com.vikram.datastructures.arrays.strings.LeetCodeArrayIntersection;
@@ -16,8 +17,10 @@ import com.vikram.datastructures.arrays.strings.LeetCodeDailyTemperatures;
 import com.vikram.datastructures.arrays.strings.LeetCodeEasyDuplicatesFromSortedArray;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestCommonSequence;
 import com.vikram.datastructures.arrays.strings.LeetCodeMoveZeros;
+import com.vikram.datastructures.arrays.strings.LeetCodePalindrome125;
 import com.vikram.datastructures.arrays.strings.LeetCodePascalsTriangle;
 import com.vikram.datastructures.arrays.strings.LeetCodePlusOne;
+import com.vikram.datastructures.arrays.strings.LeetCodeReverseInteger127;
 import com.vikram.datastructures.arrays.strings.LeetCodeRotateArray;
 import com.vikram.datastructures.arrays.strings.LeetCodeSingleNumber;
 import com.vikram.datastructures.arrays.strings.LeetCodeStockBuyMaxProfit;
@@ -127,5 +130,13 @@ public class App
 		LeetCodeLongestCommonSequence llcs = new LeetCodeLongestCommonSequence();
 		System.out.println("Longest Common subsequnce is: " + llcs.recommendedSol(s));
 		
+		LeetCode151ReverseStringMicrosoft l151 = new LeetCode151ReverseStringMicrosoft();
+		System.out.println(l151.reverseWords("a good   example"));
+		
+		LeetCodeReverseInteger127 lri = new LeetCodeReverseInteger127();
+		System.out.println(lri.reverse(123));
+		
+		LeetCodePalindrome125 lrp125 = new LeetCodePalindrome125();
+		lrp125.isPalindrome("A man, a plan, a canal: Panama");
     }
 }
