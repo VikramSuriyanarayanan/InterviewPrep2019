@@ -49,26 +49,29 @@ public class MainForLinkedList {
 		
 		LeetCodeMergeLinkedList lcmll = new LeetCodeMergeLinkedList();
 		ListNode merg1 = new ListNode(1);		
-		ListNode m12 = new ListNode(3);
-		ListNode m13 = new ListNode(5);
-		ListNode m14 = new ListNode(7);
+		ListNode m12 = new ListNode(2);
+		ListNode m13 = new ListNode(4);
+		//ListNode m14 = new ListNode(7);
 		
 		merg1.next = m12;
 		m12.next = m13;
-		m13.next = m14;
-		m14.next = null;
+		m13.next = null;
+		//m14.next = null;
 		
-		ListNode m21 = new ListNode(2);		
-		ListNode m22 = new ListNode(4);
-		ListNode m23 = new ListNode(6);
-		ListNode m24 = new ListNode(8);
+		ListNode m21 = new ListNode(1);		
+		ListNode m22 = new ListNode(3);
+		ListNode m23 = new ListNode(4);
+		//ListNode m24 = new ListNode(8);
 		
 		m21.next = m22;
 		m22.next = m23;
-		m23.next = m24;
-		m24.next = null;
+		m23.next = null;
+		//m24.next = null;
 		
 		System.out.println(lcmll.mergeTwoLists(merg1,m21).val);
+		
+		LeetCodeAddTwoNodes lat = new LeetCodeAddTwoNodes();
+		System.out.println(lat.addTwoNumbers(merg1, m21).val);
 	}
 
 }

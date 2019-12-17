@@ -19,8 +19,8 @@ public class LeetCodeMergeLinkedList {
 		ListNode dummy =  output;
 
 		while(l1 != null && l2 !=null) {
-
-			if (l2.val < l1.val) {
+                
+			if (l2.val <= l1.val) {
 				output.next = l2;
 				l2 = l2.next;
 			} else {
@@ -30,6 +30,12 @@ public class LeetCodeMergeLinkedList {
 			
 			output = output.next;
 		}
+		
+		if (l1 != null) 
+			output.next = l1;
+		
+		if (l2 !=null)
+			output.next = l2;
 
 		return dummy.next;
 	}
