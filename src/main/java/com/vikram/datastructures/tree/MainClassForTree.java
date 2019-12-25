@@ -65,6 +65,17 @@ public class MainClassForTree {
 		System.out.println(lpsum.doesPathExist(root, 3, 0));
 		LeetCodeIsSubTree572 lsubtree = new LeetCodeIsSubTree572();
 		System.out.println(lsubtree.isSubtree(root, root));
+		
+		FindDuplicateSubTrees652 fdsubtree = new FindDuplicateSubTrees652();
+		fdsubtree.findDuplicateSubtrees(root1);
+		
+		TreeNode rootuni = new TreeNode(5); 
+		rootuni.left = new TreeNode(5); 
+		rootuni.right = new TreeNode(1); 
+		
+		LeetCodeCountUniValSubTrees lccu = new LeetCodeCountUniValSubTrees();
+		System.out.println(lccu.countUnivalSubtrees(rootuni));
+		
 	}
 
 }
