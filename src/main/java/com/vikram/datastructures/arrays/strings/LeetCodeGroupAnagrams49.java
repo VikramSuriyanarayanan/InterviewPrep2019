@@ -15,32 +15,30 @@ import java.util.Map;
  */
 public class LeetCodeGroupAnagrams49 {
 
-	 public List<List<String>> groupAnagrams(String[] strs) {
-	        
-	        String[] output = new String[strs.length];
-	        List<List<String>> listOut = new ArrayList<List<String>>();
-	        HashMap<String,List<String>> hash = new HashMap<String, List<String>>();
-	        
-	        for(int i=0;i<strs.length;i++) {	            
-	            Arrays.sort(strs[i].toCharArray());
-	        }
-	        
-	        System.out.println(Arrays.deepToString(strs));
-	        for(int j=0;j<output.length;j++) {
-	            if(hash.containsKey(output[j])) {
-	                List ret = hash.get(output[j]);
-	                ret.add(strs[j]);
-	                hash.put(output[j],ret);
-	            } else {
-	                List<String> subAns = new ArrayList<String>();
-	                subAns.add(strs[j]);
-	                hash.put(output[j],subAns);
-	            }
-	        }
-	        
-	        for (Map.Entry<String,List<String>> entry : hash.entrySet())  
-	            listOut.add(entry.getValue()); 
-	        
-	        return listOut;
-	    }
+	public List<List<String>> groupAnagrams(String[] strs) {
+
+		List<List<String>> listOut = new ArrayList<List<String>>();
+		HashMap<String,List<String>> hash = new HashMap<String, List<String>>();
+
+		for(int i=0;i<strs.length;i++) {
+			char[] sortedarr = strs[i].toCharArray();
+			Arrays.sort(sortedarr);
+			String s = new String(sortedarr);
+
+			if(hash.containsKey(s)) {
+				List ret = hash.get(s);
+				ret.add(strs[i]);
+				hash.put(s,ret);
+			} else {
+				List<String> subAns = new ArrayList<String>();
+				subAns.add(strs[i]);
+				hash.put(s,subAns);
+			}
+		}
+
+		for (Map.Entry<String,List<String>> entry : hash.entrySet())  
+			listOut.add(entry.getValue()); 
+
+		return listOut;
+	}
 }

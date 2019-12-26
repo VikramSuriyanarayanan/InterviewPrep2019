@@ -20,8 +20,12 @@ import com.vikram.datastructures.arrays.strings.LeetCodeFlipGame293;
 import com.vikram.datastructures.arrays.strings.LeetCodeGroupAnagrams49;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestCommonSequence;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestConsecutiveOnes3;
+import com.vikram.datastructures.arrays.strings.LeetCodeLongestRepeatingCharacterReplacement424;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestSubstringTwoDistinct159;
+import com.vikram.datastructures.arrays.strings.LeetCodeMaxConsecutiveIII1004;
 import com.vikram.datastructures.arrays.strings.LeetCodeMicrosoft;
+import com.vikram.datastructures.arrays.strings.LeetCodeMicrosoftFindTime;
+import com.vikram.datastructures.arrays.strings.LeetCodeMinimumWindowSubstring76;
 import com.vikram.datastructures.arrays.strings.LeetCodeMoveZeros;
 import com.vikram.datastructures.arrays.strings.LeetCodePalindrome125;
 import com.vikram.datastructures.arrays.strings.LeetCodePascalsTriangle;
@@ -191,10 +195,6 @@ public class App
 		LeetCodeAddStrings415 l415 = new LeetCodeAddStrings415();
 		System.out.println(l415.addStrings("98", "9"));
 		
-		String[] anagramInput = {"eat","tea","tan","ate","nat","bat"};
-		LeetCodeGroupAnagrams49 lga = new LeetCodeGroupAnagrams49();
-		System.out.println(lga.groupAnagrams(anagramInput));
-		
 		int[] numsinp = {4,1,5,4};
 		LeetCodeMicrosoft lcmic  = new LeetCodeMicrosoft();
 		System.out.println(lcmic.findMaxDistance(numsinp));
@@ -217,7 +217,24 @@ public class App
 		
 		LeetCodeLongestSubstringTwoDistinct159 l159 = new LeetCodeLongestSubstringTwoDistinct159();
 		System.out.println("LENGTH CONSECUTIVE AT 2 chars : "+l159.lengthOfLongestSubstringTwoDistinct("abaccc"));
+		
+		LeetCodeMinimumWindowSubstring76 l76 = new LeetCodeMinimumWindowSubstring76();
+		System.out.println(l76.findMin("ADOBECODEBANC", "ABC"));
+		
+		LeetCodeLongestRepeatingCharacterReplacement424 l424 = new LeetCodeLongestRepeatingCharacterReplacement424();
+		System.out.println("MAX REPEATING CHAR: "+ l424.findReplacement("AABABBA", 2));
 
+		LeetCodeMaxConsecutiveIII1004 l1004 = new LeetCodeMaxConsecutiveIII1004();
+		int[] l1004inp = {1,1,1,0,0,0,1,1,1,1,0};
+		System.out.println("MAX CONSECUTIVE III is " + l1004.longestConsecutive(l1004inp, 2));
+		
+		LeetCodeMicrosoftFindTime lfindTime = new LeetCodeMicrosoftFindTime();
+		System.out.println("TIME IS: "+lfindTime.findTime(8, true, -19));
+		
+		String[] anagramInput = {"eat","tea","tan","ate","nat","bat"};
+		LeetCodeGroupAnagrams49 lga = new LeetCodeGroupAnagrams49();
+		System.out.println("GROUP ANAGRAM OUTPUT: "+lga.groupAnagrams(anagramInput));
+		
 	}
 }
 
