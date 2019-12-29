@@ -14,12 +14,15 @@ import com.vikram.datastructures.arrays.strings.LeetCode2DiagonalTraverse;
 import com.vikram.datastructures.arrays.strings.LeetCodeAddBinaryString;
 import com.vikram.datastructures.arrays.strings.LeetCodeAddStrings415;
 import com.vikram.datastructures.arrays.strings.LeetCodeArrayIntersection;
+import com.vikram.datastructures.arrays.strings.LeetCodeContainseWithMostWater11;
 import com.vikram.datastructures.arrays.strings.LeetCodeDailyTemperatures;
 import com.vikram.datastructures.arrays.strings.LeetCodeEasyDuplicatesFromSortedArray;
+import com.vikram.datastructures.arrays.strings.LeetCodeFindAllAnagrams438;
 import com.vikram.datastructures.arrays.strings.LeetCodeFlipGame293;
 import com.vikram.datastructures.arrays.strings.LeetCodeGroupAnagrams49;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestCommonSequence;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestConsecutiveOnes3;
+import com.vikram.datastructures.arrays.strings.LeetCodeLongestPalindromeSubstring5;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestRepeatingCharacterReplacement424;
 import com.vikram.datastructures.arrays.strings.LeetCodeLongestSubstringTwoDistinct159;
 import com.vikram.datastructures.arrays.strings.LeetCodeMaxConsecutiveIII1004;
@@ -31,13 +34,17 @@ import com.vikram.datastructures.arrays.strings.LeetCodePalindrome125;
 import com.vikram.datastructures.arrays.strings.LeetCodePascalsTriangle;
 import com.vikram.datastructures.arrays.strings.LeetCodePlusOne;
 import com.vikram.datastructures.arrays.strings.LeetCodeRansomNote;
+import com.vikram.datastructures.arrays.strings.LeetCodeRemoveKdigits402;
 import com.vikram.datastructures.arrays.strings.LeetCodeReverseInteger127;
+import com.vikram.datastructures.arrays.strings.LeetCodeRomanToInteger13;
 import com.vikram.datastructures.arrays.strings.LeetCodeRotateArray;
 import com.vikram.datastructures.arrays.strings.LeetCodeSingleNumber;
 import com.vikram.datastructures.arrays.strings.LeetCodeSmallestDivisor1283;
 import com.vikram.datastructures.arrays.strings.LeetCodeSortColors75;
+import com.vikram.datastructures.arrays.strings.LeetCodeSquareSorted977;
 import com.vikram.datastructures.arrays.strings.LeetCodeStockBuyMaxProfit;
 import com.vikram.datastructures.arrays.strings.LeetCodeStringAtoI8;
+import com.vikram.datastructures.arrays.strings.LeetCodeTripletSum15;
 import com.vikram.datastructures.arrays.strings.LeetCodeTwoSum;
 import com.vikram.datastructures.arrays.strings.LeetcodeCountAndSay38;
 import com.vikram.datastructures.arrays.strings.LeetcodeFindPivotElement;
@@ -234,6 +241,30 @@ public class App
 		String[] anagramInput = {"eat","tea","tan","ate","nat","bat"};
 		LeetCodeGroupAnagrams49 lga = new LeetCodeGroupAnagrams49();
 		System.out.println("GROUP ANAGRAM OUTPUT: "+lga.groupAnagrams(anagramInput));
+		
+		LeetCodeFindAllAnagrams438 l438 = new LeetCodeFindAllAnagrams438();
+		System.out.println(l438.findAnagrams("cbaebabacd", "abc").toString());
+		
+		LeetCodeLongestPalindromeSubstring5 l5 = new LeetCodeLongestPalindromeSubstring5();
+		System.out.println("LongestPalindrome Substring: " + l5.longestPalindrome("babad"));
+		
+		LeetCodeSquareSorted977 l977 = new LeetCodeSquareSorted977();
+		int[] lin977 = {-4,-1,0,3,10};
+		System.out.println("SortedSquares" + Arrays.toString(l977.sortedSquares(lin977)));
+		
+		LeetCodeRomanToInteger13 leet13 = new LeetCodeRomanToInteger13();
+		System.out.println("Converting ROMAN TO INT: "+String.valueOf(leet13.romanToInt("IX")));
+		
+		LeetCodeRemoveKdigits402 l402 = new LeetCodeRemoveKdigits402();
+		System.out.println("Remove K digits"+l402.removeKdigits("1432219", 3));
+		
+		LeetCodeTripletSum15 l15 = new LeetCodeTripletSum15();
+		int[] l15in = {-4,-1,-1,0,1,2};
+		System.out.println("TRIPLET SUM: "+(l15.threeSum(l15in)).toString());
+		
+		LeetCodeContainseWithMostWater11 l11 = new LeetCodeContainseWithMostWater11();
+		int[] l11input = {1,8,6,2,5,4,8,3,7};
+		System.out.println("MAXAREA: "+ l11.maxArea(l11input));
 		
 	}
 }
