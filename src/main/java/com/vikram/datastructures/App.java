@@ -51,6 +51,7 @@ import com.vikram.datastructures.arrays.strings.LeetcodeFindPivotElement;
 import com.vikram.datastructures.arrays.strings.MicrosoftOnlineAssessmentPositiveNegative;
 import com.vikram.datastructures.arrays.strings.PrintStringPermutations;
 import com.vikram.datastructures.arrays.strings.Testapp;
+import com.vikram.datastructures.binary.search.LeetCodeFindRotatedIndex33;
 import com.vikram.datastructures.stacks.leetcode.Leetcode227BasicCalculator2;
 /**
  * Hello world!
@@ -264,8 +265,7 @@ public class App
 		
 		LeetCodeContainseWithMostWater11 l11 = new LeetCodeContainseWithMostWater11();
 		int[] l11input = {1,8,6,2,5,4,8,3,7};
-		System.out.println("MAXAREA: "+ l11.maxArea(l11input));
-		
+		System.out.println("MAXAREA: "+ l11.maxArea(l11input));		
 	}
 }
 
