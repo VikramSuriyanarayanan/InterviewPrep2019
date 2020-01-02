@@ -58,7 +58,7 @@ public class MainClassForTree {
 		root1.left = new TreeNode(-2); 
 		root1.right = new TreeNode(-3); 
 		root1.left.right = new TreeNode(3); 
-		root1.left.left = new TreeNode(1); 
+		root1.left.left = new TreeNode(10); 
 		root1.right.left = new TreeNode(-2); 
 		root1.left.left.left = new TreeNode(-1);
 		
@@ -76,6 +76,11 @@ public class MainClassForTree {
 		LeetCodeCountUniValSubTrees lccu = new LeetCodeCountUniValSubTrees();
 		System.out.println(lccu.countUnivalSubtrees(rootuni));
 		
+		LeetCodeInOrderSuccessor285 l285 = new LeetCodeInOrderSuccessor285();
+		System.out.println("CORRESPONDING INORDER TRAVERSAL IS " + l285.inorderSuccessor(root1, root1.left));
+		
+		LeetCodeSearchInBST lsbst = new LeetCodeSearchInBST();
+		System.out.println(lsbst.searchBST(root1, -2));
 	}
 
 }
