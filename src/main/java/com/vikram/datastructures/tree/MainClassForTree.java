@@ -81,6 +81,20 @@ public class MainClassForTree {
 		
 		LeetCodeSearchInBST lsbst = new LeetCodeSearchInBST();
 		System.out.println(lsbst.searchBST(root1, -2));
+		
+		LeetCodeDeleteInBST ldbst = new LeetCodeDeleteInBST();
+		TreeNode deletebstinput = new TreeNode(10);
+		deletebstinput.left = new TreeNode(5);
+		deletebstinput.right = new TreeNode(15);
+		deletebstinput.left.left = new TreeNode(1); 
+		deletebstinput.left.right = new TreeNode(7);
+
+		System.out.println(ldbst.deleteNode(deletebstinput , 5).val);
+		
+		LeetCodeZigZagTraversal103 l103 = new LeetCodeZigZagTraversal103();
+		System.out.println(l103.zigzagLevelOrder(deletebstinput).toString());
+		
+		
 	}
 
 }

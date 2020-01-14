@@ -36,10 +36,12 @@ import com.vikram.datastructures.arrays.strings.LeetCodePlusOne;
 import com.vikram.datastructures.arrays.strings.LeetCodeRansomNote;
 import com.vikram.datastructures.arrays.strings.LeetCodeRemoveKdigits402;
 import com.vikram.datastructures.arrays.strings.LeetCodeReverseInteger127;
+import com.vikram.datastructures.arrays.strings.LeetCodeReverseStringII186;
 import com.vikram.datastructures.arrays.strings.LeetCodeRomanToInteger13;
 import com.vikram.datastructures.arrays.strings.LeetCodeRotateArray;
 import com.vikram.datastructures.arrays.strings.LeetCodeSingleNumber;
 import com.vikram.datastructures.arrays.strings.LeetCodeSmallestDivisor1283;
+import com.vikram.datastructures.arrays.strings.LeetCodeSnakeAndLadder909;
 import com.vikram.datastructures.arrays.strings.LeetCodeSortColors75;
 import com.vikram.datastructures.arrays.strings.LeetCodeSquareSorted977;
 import com.vikram.datastructures.arrays.strings.LeetCodeStockBuyMaxProfit;
@@ -266,6 +268,17 @@ public class App
 		LeetCodeContainseWithMostWater11 l11 = new LeetCodeContainseWithMostWater11();
 		int[] l11input = {1,8,6,2,5,4,8,3,7};
 		System.out.println("MAXAREA: "+ l11.maxArea(l11input));		
+		
+		LeetCodeSnakeAndLadder909 l909 = new LeetCodeSnakeAndLadder909();
+		int[][] l909input = {{1,1,1,1},
+				{2,2,1,22,33},{1,2,5,4,1}};
+		l909.playGame(l909input);
+		
+		LeetCodeReverseStringII186 l186 = new LeetCodeReverseStringII186();
+		char[] l186inp = {'t','h','e',' ','s','k','y',' ','i','s',' ','b','l','u','e'};
+		char[] c = "hello world!".toCharArray();
+		l186.reverseWords(c);
+		System.out.println("MAYILANJI: " +Arrays.toString(c));
 	}
 }
 
