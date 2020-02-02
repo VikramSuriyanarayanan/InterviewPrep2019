@@ -25,6 +25,9 @@ public class MSMain {
 		LuckyNumbers lucky = new LuckyNumbers();
 		System.out.println("IS LUCKY?"+ lucky.isLuckyNumber(20));
 		System.out.println("Get LuckyNumbers: "+ lucky.getLuckyNumberList().toString());
+		
+		DebugQuestion db = new DebugQuestion();
+		db.MakeTheNumbersMatch(5, 66, 10, 50);
 	}
 
 }

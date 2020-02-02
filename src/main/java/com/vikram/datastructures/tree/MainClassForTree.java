@@ -94,7 +94,8 @@ public class MainClassForTree {
 		LeetCodeZigZagTraversal103 l103 = new LeetCodeZigZagTraversal103();
 		System.out.println(l103.zigzagLevelOrder(deletebstinput).toString());
 		
-		
+		PathSumTotal pt = new PathSumTotal();
+		System.out.println(pt.path(root));
 	}
 
 }

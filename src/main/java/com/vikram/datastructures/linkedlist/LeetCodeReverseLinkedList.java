@@ -15,10 +15,10 @@ public class LeetCodeReverseLinkedList {
 		}
 		ListNode currentHead = head;
 		while (head.next != null) {
-			ListNode p = head.next;
-			head.next = p.next;
-			p.next = currentHead;
-			currentHead = p;
+			ListNode nextNode = head.next;
+			head.next = nextNode.next;
+			nextNode.next = currentHead;
+			currentHead = nextNode;
 		}
 		return currentHead;
 	}

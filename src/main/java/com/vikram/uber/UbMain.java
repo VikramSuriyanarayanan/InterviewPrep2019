@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.vikram.datastructures.tree.TreeNode;
+import com.vikram.uber.arrays.ComparatorElement;
+import com.vikram.uber.arrays.MaxContiguousSubArray;
+import com.vikram.uber.arrays.ProdMinusSum;
 import com.vikram.uber.string.ReconstructItinery332;
 import com.vikram.uber.tree.PathSumIII437;
 
@@ -43,6 +46,16 @@ public class UbMain {
 		PathSumIII437 p437 = new PathSumIII437();
 		System.out.println("Total Paths: " + p437.pathSum(root, 6));
 		
+		ProdMinusSum ps = new ProdMinusSum();
+		System.out.println(ps.prodSum(1234));
+		
+		ComparatorElement ce = new ComparatorElement();
+		int[] num1 = {2,9};
+		int[] num2 = {12,19,8};
+		System.out.println(ce.compareArrays(num1, num2, 3));
+		
+		MaxContiguousSubArray mm = new MaxContiguousSubArray();
+		System.out.println(mm.findMaxSubArray(num2, 2));
 	}
 
 }
