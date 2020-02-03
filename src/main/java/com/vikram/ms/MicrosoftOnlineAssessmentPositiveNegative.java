@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vikram.datastructures.arrays.strings;
+package com.vikram.ms;
 
 import java.util.HashSet;
 

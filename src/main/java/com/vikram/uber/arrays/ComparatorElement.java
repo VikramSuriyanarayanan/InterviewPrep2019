@@ -30,4 +30,18 @@ public class ComparatorElement {
 		
 		return count;
 	}
+	
+	
+	public int attempt2(int[] arr1, int[] arr2, int diff) {
+		if(arr1.length<1 || arr2.length<1)
+			return 0;
+		
+		int i=0,j=0;
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		
+		while(i<arr1.length && j<arr2.length) {
+			if()
+		}
+	}
 } 
