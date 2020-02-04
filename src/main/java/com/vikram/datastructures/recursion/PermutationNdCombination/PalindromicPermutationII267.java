@@ -24,28 +24,28 @@ Input: "abc"
 Output: []
  */
 public class PalindromicPermutationII267 {
-    public List<String> generatePalindromes(String s) {
-		Set<String> result = new HashSet<String>();
-		if(s.length() == 0)
-			return null;
-		
-		backTrack(result,new StringBuffer(),s,0);
+	public List<String> generatePalindromes(String s) {
+		List<String> result = new ArrayList<String>();
         
-        List<String> finalList = new ArrayList<String>();
-        finalList.addAll(result);
-		return finalList;
+        if(s.length() == 0)
+            return result;
+        Set<String> set = new HashSet<String>();
+        backTrack(set,new StringBuffer(s),s,0);
+        result.addAll(set);
+        return result;
 	}
 	
 	public void backTrack(Set<String> result, StringBuffer sb, String s, int start) {
-		if(!sb.toString().equals("") && isPalindrome(sb)) {
-			if(sb.length() == 4)
-				result.add(sb.toString());
-			return;
+		if(isPalindrome(sb)) {
+			result.add(new String(sb.toString()));
 		}
 		
 		for(int i=start;i<s.length();i++) {
-			sb.append(s.charAt(start));
-			backTrack(result,sb,s,start);
+            char[] inp = sb.toString().toCharArray();		                                             swap(inp,start,i);
+            sb = new StringBuffer(new String(inp));
+			backTrack(result,sb,s,start+1);
+            swap(inp,start,i);
+            sb = new StringBuffer(new String(inp));
 		}
 	}
 	
@@ -57,5 +57,12 @@ public class PalindromicPermutationII267 {
 		}
 		
 		return sb.toString().equals(reverse.toString());
-	} 
+	}  
+    
+    public void swap(char[] chars, int start, int end) {
+        char temp = chars[start];
+        chars[start] = chars[end];
+        chars[end] = temp;
+        return;
+    }
 }
